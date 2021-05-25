@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Modifiez votre service"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner_page_modifier_service"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:entries="@array/choix_domaine"
+                android:paddingLeft="@dimen/default_margin" />
+
+            <ImageView
+                android:id="@+id/image_page_modifier_service"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_page_modifier_service_description"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/add_service_description"
+            android:paddingLeft="@dimen/default_margin"
+            style="@style/DefaultTextStyle"/>
+
+        <EditText
+            android:id="@+id/editText_page_modifier_service_service_prix"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/add_service_cout_horaire"
+            android:paddingLeft="@dimen/default_margin"
+            style="@style/DefaultTextStyle"/>
+
+        <Button
+            android:id="@+id/button_page_modifier_service"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/classy_dark"
+            android:text="@string/modifier"
+            android:textColor="@color/elegant_gold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profil_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_profil_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#292929">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile_profile_frag"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="@dimen/default_margin"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_profil"
+                app:civ_border_color="@color/elegant_gold"
+                app:civ_border_width="2dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/pseudo_profile_frag"
+                style="@style/DefaultTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/pseudo"
+                android:textColor="@color/elegant_gold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/id_profile_page"
+                style="@style/DefaultTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="85dp"
+                android:text="#id_compte"
+                android:textSize="10dp"
+                android:textColor="@color/classy_grey"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_mon_espace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultTextStyle"
+                    android:layout_margin="@dimen/default_margin"
+                    android:text="Mon Espace"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp">
+
+                    <ListView
+                        android:id="@+id/listview_mon_espace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_gestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultTextStyle"
+                    android:layout_margin="@dimen/default_margin"
+                    android:text="Gestion"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp">
+
+                    <ListView
+                        android:id="@+id/listview_gestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_generalites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultTextStyle"
+                    android:layout_margin="@dimen/default_margin"
+                    android:text="Généralités"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp">
+
+                    <ListView
+                        android:id="@+id/listview_generalites"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

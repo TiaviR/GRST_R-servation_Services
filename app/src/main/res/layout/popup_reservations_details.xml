@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageReservationPopup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popup_reservation_details_type_service"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="Service : ID"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        style="@style/DefaultTextStyle"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/close_button_popup_reservations_details"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"/>
+
+    <TextView
+        android:id="@+id/text_titre_fournisseur_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fournisseur : "
+        android:layout_marginTop="20dp"
+        style="@style/DefaultTextStyle"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/pseudo_fournisseur_popup_reservations_details"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pseudo"
+        android:textSize="15dp"
+        android:textColor="@color/light_grey"
+        android:layout_marginLeft="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/text_titre_fournisseur_popup"
+        app:layout_constraintStart_toEndOf="@+id/text_titre_fournisseur_popup"
+        app:layout_constraintTop_toTopOf="@+id/text_titre_fournisseur_popup" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="220dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/pseudo_fournisseur_popup_reservations_details"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo_fournisseur_popup_reservations_details">
+
+        <TextView
+            android:id="@+id/text_description_popup_reservations_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Description du service"
+            android:textSize="12sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_titre_client_popup_reservations_details"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client : "
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_titre_fournisseur_popup"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/pseudo_client_popup_reservations_details"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pseudo"
+        android:textColor="@color/light_grey"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/pseudo_fournisseur_popup_reservations_details"
+        app:layout_constraintTop_toTopOf="@+id/text_titre_client_popup_reservations_details" />
+
+    <TextView
+        android:id="@+id/text_titre_date_popup_reservations_details"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_titre_client_popup_reservations_details"
+        app:layout_constraintTop_toBottomOf="@+id/text_titre_client_popup_reservations_details" />
+
+    <TextView
+        android:id="@+id/text_date_popup_reservations_details"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date - Période de la journée"
+        android:textColor="@color/light_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_titre_date_popup_reservations_details"
+        app:layout_constraintStart_toStartOf="@+id/pseudo_client_popup_reservations_details" />
+
+    <Button
+        android:id="@+id/btn_modifier"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/classy_blue"
+        android:fontFamily="@font/kanit"
+        android:text="@string/modifier"
+        android:textColor="@color/elegant_gold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/text_titre_date_popup_reservations_details"
+        app:layout_constraintTop_toBottomOf="@+id/text_titre_date_popup_reservations_details" />
+
+    <Button
+        android:id="@+id/btn_annuler"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/classy_red"
+        android:fontFamily="@font/kanit"
+        android:text="Annuler réservation"
+        android:textColor="@color/elegant_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_modifier" />
+
+    <EditText
+        android:id="@+id/editText_popup_reservation_details"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Appuyez pour choisir une nouvelle date"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_modifier" />
+
+    <Spinner
+        android:id="@+id/spinner_popup_reservation_details"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:ems="10"
+        android:entries="@array/choix_periode_journée"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_popup_reservation_details" />
+
+    <Button
+        android:id="@+id/btn_confirmer_popup_reservation_details"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        android:backgroundTint="@color/classy_dark"
+        android:fontFamily="@font/kanit"
+        android:text="Confirmer "
+        android:textColor="@color/elegant_gold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_popup_reservation_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

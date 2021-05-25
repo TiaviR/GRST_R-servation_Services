@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageServicePopup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popup_details_type_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Domaine métier du service"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        style="@style/DefaultTextStyle"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/close_button_popup_details"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"/>
+
+    <TextView
+        android:id="@+id/text_titre_fournisseur_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fournisseur"
+        android:layout_marginTop="20dp"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profil_pseudo_popup"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_profil"
+        app:civ_border_color="@color/elegant_gold"
+        app:civ_border_width="2dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toStartOf="@+id/text_titre_fournisseur_popup"
+        app:layout_constraintTop_toBottomOf="@+id/text_titre_fournisseur_popup" />
+
+    <TextView
+        android:id="@+id/pseudo_fournisseur_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pseudo"
+        style="@style/DefaultTextStyle"
+        android:textSize="15dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profil_pseudo_popup"
+        app:layout_constraintStart_toEndOf="@+id/img_profil_pseudo_popup"
+        app:layout_constraintTop_toTopOf="@+id/img_profil_pseudo_popup" />
+
+    <TextView
+        android:id="@+id/text_titre_description_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_marginTop="20dp"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/text_titre_fournisseur_popup"
+        app:layout_constraintTop_toBottomOf="@+id/img_profil_pseudo_popup" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="285dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/img_profil_pseudo_popup"
+        app:layout_constraintTop_toBottomOf="@+id/text_titre_description_popup">
+
+        <TextView
+            android:id="@+id/text_description_popup_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description du service"
+            android:textSize="14dp" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_notes_popup"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintStart_toStartOf="@+id/text_titre_description_popup"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/moyenne_notes_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:textColor="#FFC107"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_notes_popup"
+        app:layout_constraintStart_toEndOf="@+id/img_notes_popup"
+        app:layout_constraintTop_toTopOf="@+id/img_notes_popup"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/nb_notes_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(1)"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_notes_popup"
+        app:layout_constraintStart_toEndOf="@+id/moyenne_notes_popup"
+        app:layout_constraintTop_toTopOf="@+id/img_notes_popup" />
+
+    <ImageView
+        android:id="@+id/btn_fav_popup"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_favs"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/img_notes_popup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_notes_popup" />
+
+    <TextView
+        android:id="@+id/prix_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="à partir de 20€"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="@+id/img_notes_popup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_notes_popup" />
+
+    <Button
+        android:id="@+id/btn_reserver"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/classy_blue"
+        android:fontFamily="@font/kanit"
+        android:text="@string/reserver"
+        android:textColor="@color/elegant_gold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_notes_popup" />
+
+    <Button
+        android:id="@+id/btn_noter"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        android:backgroundTint="@color/classy_red"
+        android:fontFamily="@font/kanit"
+        android:text="@string/noter"
+        android:textColor="@color/elegant_gold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reserver" />
+
+    <Button
+        android:id="@+id/btn_modifier"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/classy_dark"
+        android:fontFamily="@font/kanit"
+        android:text="@string/modifier"
+        android:textColor="@color/elegant_gold"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_noter"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

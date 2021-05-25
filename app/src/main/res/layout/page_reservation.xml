@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_page_reservation"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_page_reservation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title_page_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réservation de service"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView_page_reservation"
+        app:layout_constraintStart_toEndOf="@+id/cardView_page_reservation"
+        app:layout_constraintTop_toTopOf="@+id/cardView_page_reservation"
+        style="@style/DefaultTextStyle"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/text_date_page_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginTop="20dp"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/cardView_page_reservation"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_page_reservation" />
+
+    <Button
+        android:id="@+id/button_choisir_date_page_reservation"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Choisir une date"
+        android:textSize="11sp"
+        android:textColor="@color/elegant_gold"
+        app:layout_constraintStart_toStartOf="@+id/text_date_page_reservation"
+        app:layout_constraintTop_toBottomOf="@+id/text_date_page_reservation" />
+
+    <EditText
+        android:id="@+id/editText_page_reservation"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_choisir_date_page_reservation"
+        app:layout_constraintStart_toEndOf="@+id/button_choisir_date_page_reservation"
+        app:layout_constraintTop_toTopOf="@+id/button_choisir_date_page_reservation" />
+
+    <TextView
+        android:id="@+id/text_periode_page_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Période de la journée"
+        android:layout_marginTop="20dp"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/text_date_page_reservation"
+        app:layout_constraintTop_toBottomOf="@+id/button_choisir_date_page_reservation" />
+
+    <Spinner
+        android:id="@+id/spinner_page_reservation"
+        android:layout_width="185dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/choix_periode_journée"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_periode_page_reservation" />
+
+    <Button
+        android:id="@+id/button_reserver_page_reservation"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="@string/reserver"
+        android:textColor="@color/elegant_gold"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_page_reservation" />
+
+    <Button
+        android:id="@+id/button_annuler_page_reservation"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="@string/annuler"
+        android:textColor="@color/elegant_gold"
+        android:layout_marginRight="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_reserver_page_reservation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

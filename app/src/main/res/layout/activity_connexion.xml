@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connexion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_retour_connexion"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:text="Retour"
+                android:textColor="@color/classy_dark"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_connexion"
+                        android:layout_width="match_parent"
+                        android:layout_height="97dp"
+                        app:srcCompat="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/textView_Title_connexion"
+                        style="@style/DefaultTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:text="De retour ! Connectez-vous à GRST Services" />
+
+                    <TextView
+                        android:id="@+id/textView_connexion_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:fontFamily="@font/kanit"
+                        android:text="Veuillez saisir votre email d'inscription (ou votre pseudo) et votre mot de passe." />
+
+                    <EditText
+                        android:id="@+id/text_mail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="91dp"
+                        android:ems="10"
+                        android:hint="@string/insert_id"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/classy_grey"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/editMdp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:ems="10"
+                        android:hint="@string/insert_mdp"
+                        android:inputType="textPassword"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/buttonConnexion_page_connexion"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="@string/text_connexion"
+                        android:textColor="@color/classy_grey"
+                        app:backgroundTint="@color/classy_blue" />
+
+                    <TextView
+                        android:id="@+id/textView_pas_inscrit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit"
+                        android:gravity="center|center_horizontal"
+                        android:text="@string/text_pas_inscrit" />
+
+                    <Button
+                        android:id="@+id/buttonInscription_page_connexion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_inscription"
+                        android:textColor="@color/classy_grey"
+                        app:backgroundTint="@color/classy_blue"
+                        android:layout_marginBottom="15dp"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

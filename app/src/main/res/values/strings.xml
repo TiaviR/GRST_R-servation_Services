@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">GRST Services</string>
+
+    <!-- Page d'acceuil -->
+    <string name="text_connexion">Se connecter</string>
+    <string name="text_inscription">S\'inscrire</string>
+    <string name="text_pas_inscrit">Pas encore de compte ?</string>
+    <!-- Connexion -->
+    <string name="insert_id">Email</string>
+    <string name="insert_mdp">Mot de passe</string>
+    <!-- Inscription -->
+    <string name="insert_email">Email</string>
+    <string name="insert_nom">Nom</string>
+    <string name="insert_prenom">Prénom</string>
+    <string name="insert_pseudo">Pseudo</string>
+    <string-array name="choix_inscription">
+        <item>Utilisateur de services</item>
+        <item>Fournisseur de services</item>
+    </string-array>
+    <string name="repeat_mdp">Répetez le mot de passe</string>
+
+    <!-- Barre de menu -->
+    <string name="home">Accueil</string>
+    <string name="search">Recherche</string>
+    <string name="add_service">Nouveau service</string>
+    <string name="mes_services">Réservations</string>
+    <string name="profil">Profil</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="show_all">Tout afficher</string>
+    <string name="ignorer">Ignorer</string>
+
+
+    <!-- Ajout d'un service -->
+    <string-array name="choix_domaine">
+        <item>Agriculture</item>
+        <item>Agroalimentaire - Alimentation</item>
+        <item>Animaux</item>
+        <item>Architecture - Aménamgement Intérieur</item>
+        <item>Artisanat - Métiers d\'art</item>
+        <item>Banque - Finance - Assurance</item>
+        <item>Bâtiment - Travaux publics</item>
+        <item>Commerce - Immobilier</item>
+        <item>Communication - Information</item>
+        <item>Culture - Spectacle</item>
+        <item>Défense - Sécurité - Secours</item>
+        <item>Droit</item>
+        <item>Edition - Imprimerie - Livre</item>
+        <item>Informatique - Electronique</item>
+        <item>Enseignement - Formation</item>
+        <item>Environnement - Nature - Nettoyage</item>
+        <item>Gestion - Audit - Ressources humaines</item>
+        <item>Hôtellerie - Restauration - Tourisme</item>
+        <item>Humanitaire</item>
+        <item>Industrie - Matériaux</item>
+        <item>Lettres - Sciences Humaines</item>
+        <item>Mécanique - Maintenance</item>
+        <item>Numérique - Multimédia - Audiovisuel</item>
+        <item>Santé</item>
+        <item>Social - Service à la personne</item>
+        <item>Soin - Esthétique - Coiffure</item>
+        <item>Sport et Animation</item>
+        <item>Transport - Logistique</item>
+    </string-array>
+
+    <string-array name="choix_image_domaine">
+        <item>https://cdn.pixabay.com/photo/2017/07/19/08/50/gardening-2518377__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2020/01/23/09/17/leaf-4787248__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2015/10/12/14/57/dogs-984015__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2021/04/07/16/30/painting-6159592__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2020/06/09/03/08/craft-5276736__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2016/10/09/19/19/coins-1726618__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2016/12/09/17/35/worker-1895691__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2018/01/28/10/08/purchase-3113198__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2017/04/11/22/56/stage-2223130__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2015/07/31/15/01/security-869216__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2015/04/12/16/33/hammer-719066__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2020/11/13/08/37/pc-5737958__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2018/10/22/18/02/teacher-3765909__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2018/07/06/16/57/the-labour-code-3520806__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2018/02/04/09/03/migration-3129340__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2012/11/28/10/32/welding-67640__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2016/02/19/10/12/writing-1209121__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2014/09/13/21/46/milling-444493__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2015/03/26/09/43/camera-690163__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2016/02/29/15/01/doctor-1228627__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2017/10/31/20/57/hands-2906458__340.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2020/05/14/12/37/barber-5194406_960_720.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2017/04/25/20/18/sport-2260736_960_720.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2015/11/07/11/08/truck-1030846__340.jpg</item>
+    </string-array>
+
+    <string name="add_service_description">Veuillez décrire votre service</string>
+    <string name="add_service_cout_horaire">Saisissez le montant de votre service</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="reserver">Réserver</string>
+    <string name="noter">Noter</string>
+    <string name="annuler">Annuler</string>
+    <string name="modifier">Modifier</string>
+
+    <!-- Création d'une réservation -->
+
+    <string-array name="choix_periode_journée">
+        <item>Matin</item>
+        <item>Après-midi</item>
+        <item>Journée entière</item>
+    </string-array>
+
+</resources>
